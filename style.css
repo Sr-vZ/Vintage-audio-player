@@ -1,0 +1,106 @@
+.album-thumb{
+    max-height: 150px;
+}
+.wooden-frame{
+    max-width: 300px;
+    max-height: 300px;
+    position: absolute;
+    border-radius: 10px;
+    /* align-content: center; */
+}
+.tone-arm{
+    position: absolute;
+    height: 100px;
+    width:50px;
+    /* top:0px; */
+    /* right:0px; */
+    object-fit: cover;
+}
+#icon-tonearm{
+    /* position: absolute;
+    height: 100px;
+    width:50px;
+    top:0px;
+    right:0px; */
+    object-fit: cover;
+}
+.tone-arm-style{
+    height: 200px;
+    position: absolute;
+}
+@keyframes turntable {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+div.LP {
+    margin: 50px auto;
+    border: 2px outset silver;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    animation-name: turntable;
+    animation-duration: 3.6s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+div#LP-percent {
+    background: radial-gradient(closest-side,
+            #ccc 2.2%,
+            #a02 2.2%, #a02 32.5%,
+            #000 32.5%, #000 42.6%,
+            #111 42.6%, #111 49.7%,
+            #000 49.7%, #000 50%,
+            #111 50%, #111 59.7%,
+            #000 59.7%, #000 60%,
+            #111 60%, #111 69.7%,
+            #000 69.7%, #000 70%,
+            #111 70%, #111 79.7%,
+            #000 79.7%, #000 80%,
+            #111 80%, #111 89.7%,
+            #000 89.7%, #000 90%,
+            #111 90%, #111 96.7%,
+            #000 96.7%);
+}
+
+div#LP-px {
+    margin-bottom: 200px;
+    /* comment this out and see what happens (in Firefox v46) when you scroll to the very bottom of the screen */
+    background: radial-gradient(closest-side,
+            #ccc 9px,
+            #063 9px, #063 130px,
+            #000 130px, #000 170px,
+            #111 170px, #111 199px,
+            #000 199px, #000 200px,
+            #111 200px, #111 239px,
+            #000 239px, #000 240px,
+            #111 240px, #111 279px,
+            #000 279px, #000 280px,
+            #111 280px, #111 319px,
+            #000 319px, #000 320px,
+            #111 320px, #111 359px,
+            #000 359px, #000 360px,
+            #111 360px, #111 387px,
+            #000 387px);
+}
+
+div.LP p {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+div.LP p.first-line {
+    padding-top: 330px;
+}
+
+div.LP p.second-line {
+    padding-top: 90px;
+}
